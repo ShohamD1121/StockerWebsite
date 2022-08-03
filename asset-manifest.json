@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/StockerWebsite/static/css/main.7e325e78.css",
+    "main.js": "/StockerWebsite/static/js/main.8b8b53b7.js",
+    "static/js/787.cda612ba.chunk.js": "/StockerWebsite/static/js/787.cda612ba.chunk.js",
+    "static/media/Slides.svg": "/StockerWebsite/static/media/Slides.8909d3fde40506a2ef8bca972c552727.svg",
+    "static/media/headerImg.svg": "/StockerWebsite/static/media/headerImg.cfa5337e73fcdfd1fcf7c8a435c031d7.svg",
+    "static/media/logoFinal.svg": "/StockerWebsite/static/media/logoFinal.094e4459ea45eb45d935454556e822e1.svg",
+    "index.html": "/StockerWebsite/index.html",
+    "main.7e325e78.css.map": "/StockerWebsite/static/css/main.7e325e78.css.map",
+    "main.8b8b53b7.js.map": "/StockerWebsite/static/js/main.8b8b53b7.js.map",
+    "787.cda612ba.chunk.js.map": "/StockerWebsite/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7e325e78.css",
+    "static/js/main.8b8b53b7.js"
+  ]
+}
