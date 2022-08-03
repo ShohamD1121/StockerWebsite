@@ -1,0 +1,1 @@
+export const MainRoute = "/stocker-website";
