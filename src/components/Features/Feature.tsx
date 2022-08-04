@@ -33,7 +33,7 @@ const Feature: React.FC<Props> = ({
             />
           </div>
         )}
-        <div className="flex md:w-6/12 w-full h-full md:items-center flex-col self-center">
+        <div className="flex md:w-6/12 md:mb-0 mb-12 w-full h-full md:items-center flex-col self-center">
           <div className="flex mb-10 py-2 px-3 gap-2 mx-auto text-center rounded-3xl bg-lightGreen text-green">
             <Icon size={18} className="my-auto" />
             <p>{smallTitle}</p>

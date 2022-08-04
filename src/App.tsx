@@ -17,16 +17,16 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path={`/${MainRoute}`} element={<Home />} />
-          <Route path={`/${MainRoute}/Faq`} element={<FAQ />} />
-          <Route path={`/${MainRoute}/Contact-Us`} element={<ContactUs />} />
-          <Route path={`/${MainRoute}/Download`} element={<Download />} />
+          <Route path={`${MainRoute}`} element={<Home />} />
+          <Route path={`${MainRoute}/Faq`} element={<FAQ />} />
+          <Route path={`${MainRoute}/Contact-Us`} element={<ContactUs />} />
+          <Route path={`${MainRoute}/Download`} element={<Download />} />
           <Route
-            path={`/${MainRoute}/Terms-Of-Service`}
+            path={`${MainRoute}/Terms-Of-Service`}
             element={<TermsOfService />}
           />
           <Route
-            path={`/${MainRoute}/Privacy-Policy`}
+            path={`${MainRoute}/Privacy-Policy`}
             element={<PrivacyPolicy />}
           />
         </Routes>
