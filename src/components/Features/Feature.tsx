@@ -34,11 +34,15 @@ const Feature: React.FC<Props> = ({
           </div>
         )}
         <div className="flex md:w-6/12 md:mb-0 mb-12 w-full h-full md:items-center flex-col self-center">
-          <div className="flex mb-10 py-2 px-3 gap-2 mx-auto text-center rounded-3xl bg-lightGreen text-green">
+          <div className={`flex mb-10 py-2 px-3 gap-2 mx-auto text-center rounded-3xl ${ltr ? `bg-lightGreen text-green` : `bg-lightBlue text-blue`}`}>
             <Icon size={18} className="my-auto" />
             <p>{smallTitle}</p>
           </div>
-          <h1 className="md:text-5xl text-3xl font-bold mb-6 2xl:text-6xl leading-8">
+          <h1
+            className={`md:text-5xl text-3xl font-bold mb-6 2xl:text-6xl leading-8 ${
+              ltr ? `text-blue` : `text-green`
+            }`}
+          >
             {title}
           </h1>
           <p className="md:text-lg text-sm text-gray-500 2xl:text-2xl">

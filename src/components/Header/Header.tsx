@@ -26,7 +26,7 @@ const Header = (props: Props) => {
                 className="sm:text-md text-xs border rounded-l-lg w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                 placeholder="Enter Your Email"
               />
-              <button className=" bg-green text-white py-2 px-4 rounded-r-lg  hover:bg-emerald-400">
+              <button className=" bg-green text-white py-2 px-4 rounded-r-lg  hover:bg-blue">
                 Get Started
               </button>
             </div>

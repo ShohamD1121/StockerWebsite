@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import FAQ from "./pages/FAQ";
@@ -10,6 +9,8 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import { MainRoute } from "./constants/constants";
+import "./App.css";
+
 
 function App() {
   return (
@@ -37,5 +38,3 @@ function App() {
 }
 
 export default App;
-
-//Remeber when uploading to git Start every path with this ==> path="/stocker-website/"
