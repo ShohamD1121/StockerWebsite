@@ -1,9 +1,10 @@
 import React from "react";
+import DownloadComponent from "../components/Download/DownloadComponent";
 
 type Props = {};
 
 const Download = (props: Props) => {
-  return <div>Download</div>;
+  return <DownloadComponent />;
 };
 
 export default Download;
