@@ -16,14 +16,14 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/download" element={<Download />} />
-          <Route path="/terms-of-service" element={<TermsOfService />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/StockerWebsite" element={<Home />} />
+          <Route path="/StockerWebsite/faq" element={<FAQ />} />
+          <Route path="/StockerWebsite/contact-us" element={<ContactUs />} />
+          <Route path="/StockerWebsite/download" element={<Download />} />
+          <Route path="/StockerWebsite/terms-of-service" element={<TermsOfService />} />
+          <Route path="/StockerWebsite/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </React.Fragment>
   );

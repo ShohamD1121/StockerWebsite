@@ -1,13 +1,13 @@
 import React from "react";
 import headerImg from "../../images/headerImg.svg";
-import {motion} from 'framer-motion'
+// import {motion} from 'framer-motion'
 type Props = {};
 
 const Header = (props: Props) => {
   return (
     <div className="flex cool-gradient h-screen justify-center items-center flex-1 w-full flex-col py-16 px-8">
       <div className="container md:mt-0 mt-5 flex md:flex-row flex-col md:w-10/12 w-full min-h-[80vh] bg-transparent justify-between">
-        <motion.div whileInView={{x : [-300, 0] , opacity : [0, 1]}} transition={{duration : 1.5}} className="md:w-6/12 w-full flex flex-col justify-around 2xl:justify-center 2xl:gap-32">
+        <div className="md:w-6/12 w-full flex flex-col justify-around 2xl:justify-center 2xl:gap-32">
           <div className="container">
             <h1 className="md:text-5xl text-3xl font-bold mb-6 2xl:text-6xl leading-8">
               The Next Generation of stock picking
@@ -31,10 +31,10 @@ const Header = (props: Props) => {
               </button>
             </div>
           </div>
-        </motion.div>
-        <motion.div whileInView={{x : [300, 0] , opacity : [0, 1]}} transition={{duration : 1.5}}  className="container md:w-6/12 w-full h-full md:items-center flex">
+        </div>
+        <div  className="container md:w-6/12 w-full h-full md:items-center flex">
           <img src={headerImg} alt="header-img" className="w-[90%] h-[80%] sm:my-0 my-auto mx-auto " />
-        </motion.div>
+        </div>
       </div>
     </div>
   );

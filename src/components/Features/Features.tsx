@@ -18,7 +18,7 @@ const Features = (props: Props) => {
         img={Slides}
         ltr={true}
       />
-      {/* <Feature
+      <Feature
         Icon={FaDollarSign}
         smallTitle="Financials"
         title="Explore the Financials of every company"
@@ -33,7 +33,7 @@ const Features = (props: Props) => {
         description="Swipe right for your favorite stocks in order to help our AI algorithm learn your stock investing strategy and pick the best stocks for your investing portfolio."
         img={NewsAndAnalysis}
         ltr={true}
-      /> */}
+      />
     </div>
   );
 };
