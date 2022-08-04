@@ -9,6 +9,7 @@ import TermsOfService from "./pages/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import { MainRoute } from "./constants/constants";
 
 function App() {
   return (
@@ -16,12 +17,18 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/StockerWebsite" element={<Home />} />
-          <Route path="/StockerWebsite/faq" element={<FAQ />} />
-          <Route path="/StockerWebsite/contact-us" element={<ContactUs />} />
-          <Route path="/StockerWebsite/download" element={<Download />} />
-          <Route path="/StockerWebsite/terms-of-service" element={<TermsOfService />} />
-          <Route path="/StockerWebsite/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path={`/${MainRoute}`} element={<Home />} />
+          <Route path={`/${MainRoute}/Faq`} element={<FAQ />} />
+          <Route path={`/${MainRoute}/Contact-Us`} element={<ContactUs />} />
+          <Route path={`/${MainRoute}/Download`} element={<Download />} />
+          <Route
+            path={`/${MainRoute}/Terms-Of-Service`}
+            element={<TermsOfService />}
+          />
+          <Route
+            path={`/${MainRoute}/Privacy-Policy`}
+            element={<PrivacyPolicy />}
+          />
         </Routes>
         <Footer />
       </BrowserRouter>

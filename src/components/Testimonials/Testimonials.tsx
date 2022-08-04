@@ -9,7 +9,7 @@ type Props = {};
 const Testimonials: React.FC = (props: Props) => {
   return (
     <div className="flex flex-col justify-center items-center py-16 px-8">
-      <div className="container min-h-[70vh] max-h-[70vh] flex flex-col justify-around">
+      <div className="container md:h-screen flex flex-col justify-evenly">
         <motion.div
           whileInView={{  opacity: [0, 1] }}
           transition={{duration : 2}}

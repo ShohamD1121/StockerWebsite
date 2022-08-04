@@ -1,1 +1,1 @@
-export const MainRoute = "/stocker-website";
+export const MainRoute = "/StockerWebsite";
