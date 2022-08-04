@@ -1,9 +1,16 @@
 import React from "react";
+import TermsOfServiceComponent from "../components/Legal/TermsOfServiceComponent";
+import ScrollToTop from '../hooks/ScrollToTop';
 
 type Props = {};
 
 const TermsOfService = (props: Props) => {
-  return <div>TermsOfService</div>;
+  return (
+    <React.Fragment>
+      <ScrollToTop />
+      <TermsOfServiceComponent />
+    </React.Fragment>
+  );
 };
 
 export default TermsOfService;

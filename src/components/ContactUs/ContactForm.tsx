@@ -59,15 +59,15 @@ const ContactForm = (props: Props) => {
           </div>
         </div>
         <div className="md:flex md:items-center">
-          <div className="md:w-1/3">
+          <div className="md:w-1/3 w-full">
             <button
-              className="shadow bg-green hover:bg-blue focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+              className="shadow bg-green hover:bg-blue focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded md:w-auto w-full"
               type="button"
             >
               Send
             </button>
           </div>
-          <div className="md:w-2/3"></div>
+          <div className="md:w-2/3 w-0"></div>
         </div>
       </form>
     </div>

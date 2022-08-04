@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { motion } from "framer-motion";
 import NavbarItems from "./NavbarItems";
 import { Link } from "react-router-dom";
-import { MainRoute } from "../../constants/constants";
+import { MainRoute } from "../../routes/routes";
 
 type Props = {};
 
@@ -40,7 +40,7 @@ const Navbar = (props: Props) => {
               (navbarOpen ? "flex" : "hidden")
             }
           >
-            <NavbarItems />
+            <NavbarItems setNavbarOpen={setNavbarOpen} />
           </motion.div>
         ) : (
           <div
@@ -49,7 +49,7 @@ const Navbar = (props: Props) => {
               (navbarOpen ? "flex" : "hidden")
             }
           >
-            <NavbarItems />
+            <NavbarItems setNavbarOpen={setNavbarOpen} />
           </div>
         )}
       </div>

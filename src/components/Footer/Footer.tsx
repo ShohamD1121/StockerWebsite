@@ -2,7 +2,13 @@ import React from "react";
 import Logo from "../../images/logoFinal.svg";
 import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import { MainRoute } from "../../constants/constants";
+import {
+  MainRoute,
+  FaqRoute,
+  ContactUsRoute,
+  TermsOfServiceRoute,
+  PrivacyPolicyRoute,
+} from "../../routes/routes";
 
 type Props = {};
 
@@ -14,27 +20,59 @@ const Footer = (props: Props) => {
           Start your Next Level stock investing journey
         </h1>
         <div className="container grid md:grid-cols-4 grid-cols-2 gap-6 text-center">
-          <div>
+          <div className="flex flex-col">
             <h3 className="font-bold mb-4 cursor-pointer">Features</h3>
-            <p className="cursor-pointer hover:text-blue">Stock Picks</p>
-            <p className="cursor-pointer hover:text-blue">Financials</p>
-            <p className="cursor-pointer hover:text-blue">News & Analysis</p>
+            <Link to="" className="cursor-pointer hover:text-blue">
+              Stock Picks
+            </Link>
+            <Link to="" className="cursor-pointer hover:text-blue">
+              Financials
+            </Link>
+            <Link to="" className="cursor-pointer hover:text-blue">
+              News & Analysis
+            </Link>
           </div>
-          <div>
+          <div className="flex flex-col">
             <h3 className="font-bold mb-4 cursor-pointer">Support</h3>
-            <p className="cursor-pointer hover:text-blue">Contact Us</p>
-            <p className="cursor-pointer hover:text-blue">FAQ</p>
+            <Link to={FaqRoute} className="cursor-pointer hover:text-blue">
+              FAQ
+            </Link>
+            <Link
+              to={ContactUsRoute}
+              className="cursor-pointer hover:text-blue"
+            >
+              Contact Us
+            </Link>
           </div>
-          <div>
+          <div className="flex flex-col">
             <h3 className="font-bold mb-4 cursor-pointer">Legal</h3>
-            <p className="cursor-pointer hover:text-blue">Privacy Policy</p>
-            <p className="cursor-pointer hover:text-blue">Terms of Service</p>
+            <Link to={PrivacyPolicyRoute} className="cursor-pointer hover:text-blue">
+              Privacy Policy
+            </Link>
+            <Link to={TermsOfServiceRoute} className="cursor-pointer hover:text-blue">
+              Terms of Service
+            </Link>
           </div>
-          <div>
+          <div className="flex flex-col">
             <h3 className="font-bold mb-4 cursor-pointer">Social Media</h3>
-            <p className="cursor-pointer hover:text-blue">Facebook</p>
-            <p className="cursor-pointer hover:text-blue">Instagram</p>
-            <p className="cursor-pointer hover:text-blue">LinkedIn</p>
+            <a
+              href="https://www.facebook.com/yoav.tzori"
+              className="cursor-pointer hover:text-blue"
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.instagram.com/yoav_tzori"
+              className="cursor-pointer hover:text-blue"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://www.linkedin.com/company/stocker-app"
+              className="cursor-pointer hover:text-blue"
+            >
+              LinkedIn
+            </a>
           </div>
         </div>
         <div className="flex sm:justify-between items-center sm:flex-row flex-col sm:gap-0 gap-5">
@@ -48,9 +86,20 @@ const Footer = (props: Props) => {
           </Link>
           <h2 className="text-gray-500">Made By @ShohamDouek</h2>
           <div className="flex items-center gap-5">
-            <FaFacebookSquare size={25} className="text-green hover:text-blue" />
-            <FaInstagram size={25} className="text-blue hover:text-green" />
-            <FaLinkedin size={25} className="text-green hover:text-blue" />
+            <a href="https://www.facebook.com/yoav.tzori">
+              {" "}
+              <FaFacebookSquare
+                size={25}
+                className="text-green hover:text-blue"
+              />
+            </a>
+            <a href="https://www.instagram.com/yoav_tzori">
+              {" "}
+              <FaInstagram size={25} className="text-blue hover:text-green" />
+            </a>
+            <a href="https://www.linkedin.com/company/stocker-app">
+              <FaLinkedin size={25} className="text-green hover:text-blue" />
+            </a>
           </div>
         </div>
       </div>
@@ -59,4 +108,3 @@ const Footer = (props: Props) => {
 };
 
 export default Footer;
-
