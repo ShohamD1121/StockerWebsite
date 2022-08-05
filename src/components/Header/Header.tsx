@@ -3,13 +3,14 @@ import headerImg from "../../images/headerImg.svg";
 import database from "../../app/firebase";
 import { mailFormat } from "../../constants/mailFormat";
 import { motion } from "framer-motion";
-import {item, container } from '../../constants/animations';
+import { item, container } from "../../constants/animations";
 
 type Props = {};
 
 const Header = (props: Props) => {
   const [email, setEmail] = useState<string>("");
   const [isEmailValid, setIsEmailValid] = useState<boolean>(true);
+  const [isEmailSent, setIsEmailSent] = useState<boolean>(false);
   const inputRef: any = useRef();
 
   const handleClick = () => {
@@ -21,8 +22,10 @@ const Header = (props: Props) => {
         })
         .catch((err) => console.log(err));
       setIsEmailValid(true);
+      setIsEmailSent(true);
     } else {
       setIsEmailValid(false);
+      setIsEmailSent(false);
     }
     setEmail("");
     inputRef.current.value = "";
@@ -81,7 +84,15 @@ const Header = (props: Props) => {
                   variants={item}
                   className="text-red-500 text-sm text-center"
                 >
-                  Email is not Valid
+                  Email is not valid
+                </motion.p>
+              )}
+              {isEmailSent && (
+                <motion.p
+                  variants={item}
+                  className="text-green text-sm text-center"
+                >
+                  Email has been sent successfully
                 </motion.p>
               )}
             </div>
