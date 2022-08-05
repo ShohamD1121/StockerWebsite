@@ -1,6 +1,6 @@
-export const MainRoute = "/StockerWebsite";
-export const FaqRoute = "/StockerWebsite/Faq";
-export const ContactUsRoute = "/StockerWebsite/Contact-Us";
-export const DownloadRoute = "/StockerWebsite/Download";
-export const TermsOfServiceRoute = "/StockerWebsite/Terms-Of-Service";
-export const PrivacyPolicyRoute = "/StockerWebsite/Privacy-Policy";
+export const MainRoute = "/";
+export const FaqRoute = "/Faq";
+export const ContactUsRoute = "/Contact-Us";
+export const DownloadRoute = "/Download";
+export const TermsOfServiceRoute = "/Terms-Of-Service";
+export const PrivacyPolicyRoute = "/Privacy-Policy";
