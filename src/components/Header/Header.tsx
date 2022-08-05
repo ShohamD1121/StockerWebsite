@@ -30,12 +30,12 @@ const Header = (props: Props) => {
 
   return (
     <React.Fragment>
-      <div className="flex cool-gradient h-screen justify-center items-center flex-1 w-full flex-col py-16 px-8">
+      <div className="flex cool-gradient md:h-screen justify-center items-center flex-1 w-full flex-col py-16 px-8">
         <motion.div
           variants={container}
           initial="hidden"
           animate="show"
-          className="container md:mt-0 mt-5 flex md:flex-row flex-col md:w-10/12 w-full min-h-[80vh] bg-transparent justify-between"
+          className="container md:mt-3 mt-6 flex md:flex-row flex-col md:w-10/12 w-full min-h-[80vh] bg-transparent justify-between"
         >
           <div className="md:w-6/12 w-full flex flex-col justify-around 2xl:justify-center 2xl:gap-32">
             <div className="container">
@@ -88,13 +88,13 @@ const Header = (props: Props) => {
           </div>
           <motion.div
             variants={container}
-            className="container md:w-6/12 w-full h-full md:items-center flex"
+            className="container md:w-6/12 w-full h-full md:justify-end justify-center flex"
           >
             <motion.img
               variants={item}
               src={headerImg}
               alt="header-img"
-              className="w-[90%] h-[90%] sm:my-0 my-auto mx-auto "
+              className="w-[90%] sm:h-[100%] h-[90%] "
             />
           </motion.div>
         </motion.div>
