@@ -10,7 +10,7 @@ type Props = {};
 const Features = (props: Props) => {
   return (
     <React.Fragment>
-      <div id="features" className="flex justify-center items-center flex-col pt-8 pb-16 px-8">
+      <div id="features" className="flex justify-center items-center flex-col pt-10 pb-16 px-8">
         <div id="stock-picking">
           <Feature
             Icon={FaSearch}
