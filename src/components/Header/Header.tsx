@@ -94,7 +94,7 @@ const Header = (props: Props) => {
               variants={item}
               src={headerImg}
               alt="header-img"
-              className="w-[90%] h-[80%] sm:my-0 my-auto mx-auto "
+              className="w-[90%] h-[90%] sm:my-0 my-auto mx-auto "
             />
           </motion.div>
         </motion.div>
