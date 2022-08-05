@@ -5,6 +5,7 @@ import {
   DownloadRoute,
 } from "../../routes/routes";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import React from "react";
 
 type Props = {
@@ -27,6 +28,26 @@ const NavbarItems = ({ setNavbarOpen }: Props) => {
           >
             <span className="ml-2">Home</span>
           </Link>
+        </li>
+        <li className="my-auto">
+          <HashLink
+            smooth
+            className="px-3 py-2 flex items-center text-md leading-snug  text-black hover:underline underline-offset-4 decoration-blue"
+            to={`${MainRoute}#why-stocker`}
+            onClick={navbarCloser}
+          >
+            <span className="ml-2">Why Stocker</span>
+          </HashLink>
+        </li>
+        <li className="my-auto">
+          <HashLink
+            smooth
+            className="px-3 py-2 flex items-center text-md leading-snug  text-black hover:underline underline-offset-4 decoration-blue"
+            to={`${MainRoute}#features`}
+            onClick={navbarCloser}
+          >
+            <span className="ml-2">Features</span>
+          </HashLink>
         </li>
         <li className="my-auto">
           <Link

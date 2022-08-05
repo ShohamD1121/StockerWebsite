@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import headerImg from "../../images/headerImg.svg";
+import database from "../../app/firebase";
+import { mailFormat } from "../../constants/mailFormat";
 // import {motion} from 'framer-motion'
+
 type Props = {};
 
 const Header = (props: Props) => {
+  const [email, setEmail] = useState<string>("");
+  const [isEmailValid, setIsEmailValid] = useState<boolean>(true);
+  const inputRef: any = useRef();
+
+  const handleClick = () => {
+    if (email.match(mailFormat)) {
+      database
+        .ref("users")
+        .push({
+          gmail: email,
+        })
+        .catch((err) => console.log(err));
+      setIsEmailValid(true);
+    } else {
+      setIsEmailValid(false);
+    }
+    setEmail("");
+    inputRef.current.value = "";
+  };
+
   return (
     <React.Fragment>
       <div className="flex cool-gradient h-screen justify-center items-center flex-1 w-full flex-col py-16 px-8">
@@ -26,11 +49,21 @@ const Header = (props: Props) => {
                 <input
                   className="sm:text-md text-xs border rounded-l-lg w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   placeholder="Enter Your Email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  ref={inputRef}
                 />
-                <button className=" bg-green text-white py-2 px-4 rounded-r-lg  hover:bg-blue">
+                <button
+                  onClick={handleClick}
+                  className=" bg-green text-white py-2 px-4 rounded-r-lg  hover:bg-blue"
+                >
                   Get Started
                 </button>
               </div>
+              {!isEmailValid && (
+                <p className="text-red-500 text-sm text-center">
+                  Email is not Valid
+                </p>
+              )}
             </div>
           </div>
           <div className="container md:w-6/12 w-full h-full md:items-center flex">
