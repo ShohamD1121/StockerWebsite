@@ -9,7 +9,7 @@ type Props = {};
 const Testimonials: React.FC = (props: Props) => {
   return (
     <React.Fragment>
-      <div id="why-stocker" className="flex flex-col justify-center items-center py-16 px-8">
+      <div id="why-stocker" className="flex flex-col justify-center items-center px-8">
         <div className="container md:h-screen flex flex-col justify-evenly">
           <motion.div
             // whileInView={{ opacity: [0, 1] }}

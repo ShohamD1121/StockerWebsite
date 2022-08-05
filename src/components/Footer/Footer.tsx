@@ -16,7 +16,7 @@ type Props = {};
 const Footer = (props: Props) => {
   return (
     <React.Fragment>
-      <div className="flex cool-gradient w-full py-16 px-8">
+      <div className="flex cool-gradient w-full px-8">
         <div className="container flex flex-col gap-10 mx-auto">
           <h1 className="text-center md:text-5xl text-3xl font-bold mb-6 2xl:text-6xl leading-8">
             Start your Next Level stock investing journey

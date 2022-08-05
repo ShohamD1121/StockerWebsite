@@ -20,7 +20,7 @@ const Feature: React.FC<Props> = ({
 }: Props) => {
   return (
     <React.Fragment>
-      <div className="flex flex-col justify-center items-center py-16 px-8">
+      <div className="flex flex-col justify-center items-center md:pt-0 pt-10 px-8">
         <div
           className={`container flex md:flex-row ${
             ltr ? "flex-col-reverse" : "flex-col"
