@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/StockerWebsite/static/css/main.d746d1a0.css",
-    "main.js": "/StockerWebsite/static/js/main.24f11a98.js",
+    "main.js": "/StockerWebsite/static/js/main.5c8c843b.js",
     "static/media/NewsAndAnalysis.svg": "/StockerWebsite/static/media/NewsAndAnalysis.a1cc3ec9562574b0b6f44cd52d7a2275.svg",
     "static/media/Slides.svg": "/StockerWebsite/static/media/Slides.8909d3fde40506a2ef8bca972c552727.svg",
     "static/media/headerImg.svg": "/StockerWebsite/static/media/headerImg.cfa5337e73fcdfd1fcf7c8a435c031d7.svg",
@@ -9,10 +9,10 @@
     "static/media/logoFinal.svg": "/StockerWebsite/static/media/logoFinal.094e4459ea45eb45d935454556e822e1.svg",
     "index.html": "/StockerWebsite/index.html",
     "main.d746d1a0.css.map": "/StockerWebsite/static/css/main.d746d1a0.css.map",
-    "main.24f11a98.js.map": "/StockerWebsite/static/js/main.24f11a98.js.map"
+    "main.5c8c843b.js.map": "/StockerWebsite/static/js/main.5c8c843b.js.map"
   },
   "entrypoints": [
     "static/css/main.d746d1a0.css",
-    "static/js/main.24f11a98.js"
+    "static/js/main.5c8c843b.js"
   ]
 }
