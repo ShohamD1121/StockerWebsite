@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route , Navigate} from "react-router-dom";
 import Home from "./pages/Home";
 import FAQ from "./pages/FAQ";
 import Download from "./pages/Download";
@@ -30,6 +30,7 @@ function App() {
           <Route path={DownloadRoute} element={<Download />} />
           <Route path={TermsOfServiceRoute} element={<TermsOfService />} />
           <Route path={PrivacyPolicyRoute} element={<PrivacyPolicy />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
         <Footer />
       </BrowserRouter>
