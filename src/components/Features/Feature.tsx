@@ -1,5 +1,5 @@
 import React from "react";
-import {motion} from 'framer-motion';
+import { motion } from "framer-motion";
 
 type Props = {
   Icon: any;
@@ -29,7 +29,7 @@ const Feature: React.FC<Props> = ({
           {ltr && (
             <div className="flex md:w-6/12 w-full h-full items-center">
               <motion.img
-              whileInView={{x : [-100, 0]}}
+              
                 src={img}
                 alt="img"
                 className="w-[90%] h-[80%] sm:my-0 my-auto mx-auto"
@@ -59,7 +59,7 @@ const Feature: React.FC<Props> = ({
           {!ltr && (
             <div className="flex md:w-6/12 w-full h-full items-center">
               <motion.img
-               whileInView={{x : [100, 0]}}
+                
                 src={img}
                 alt="img"
                 className="w-[90%] h-[80%] sm:my-0 my-auto mx-auto"

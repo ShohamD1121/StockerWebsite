@@ -12,8 +12,8 @@ const Testimonials: React.FC = (props: Props) => {
       <div id="why-stocker" className="flex flex-col justify-center items-center py-16 px-8">
         <div className="container md:h-screen flex flex-col justify-evenly">
           <motion.div
-            whileInView={{ opacity: [0, 1] }}
-            transition={{ duration: 1.5 }}
+            // whileInView={{ opacity: [0, 1] }}
+            // transition={{ duration: 1.5 }}
             className="container flex flex-col "
           >
             <div className="flex mb-10 mx-auto py-2 px-3 gap-2 text-center rounded-3xl bg-lightGreen text-green">
@@ -33,8 +33,8 @@ const Testimonials: React.FC = (props: Props) => {
           </motion.div>
           <div className="container flex gap-5 sm:flex-row flex-col sm:mt-0 mt-10">
             <motion.div
-              whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 1.5 }}
+              // whileInView={{ opacity: [0, 1] }}
+              // transition={{ duration: 1.5 }}
               className="container flex flex-col"
             >
               <div className="flex mx-auto text-center py-2 px-3 mb-5 rounded-3xl bg-lightGreen text-green">
@@ -49,8 +49,8 @@ const Testimonials: React.FC = (props: Props) => {
               </p>
             </motion.div>
             <motion.div
-              whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 1.5 }}
+              // whileInView={{ opacity: [0, 1] }}
+              // transition={{ duration: 1.5 }}
               className="container flex flex-col"
             >
               <div className="flex mx-auto text-center py-2 px-3 mb-5 rounded-3xl bg-lightRed text-red-500">
@@ -66,9 +66,9 @@ const Testimonials: React.FC = (props: Props) => {
               </p>
             </motion.div>
             <motion.div
-              whileInView={{ opacity: [0, 1] }}
+              // whileInView={{ opacity: [0, 1] }}
               className="container flex flex-col"
-              transition={{ duration: 1.5 }}
+              // transition={{ duration: 1.5 }}
             >
               <div className="flex mx-auto text-center py-2 px-3 mb-5 rounded-3xl bg-lightBlue text-blue">
                 <FaUserFriends />
