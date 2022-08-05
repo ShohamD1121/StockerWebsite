@@ -30,7 +30,7 @@ function App() {
           <Route path={DownloadRoute} element={<Download />} />
           <Route path={TermsOfServiceRoute} element={<TermsOfService />} />
           <Route path={PrivacyPolicyRoute} element={<PrivacyPolicy />} />
-          <Route path="*" element={<Navigate to="/" replace />} />
+          <Route path="*" element={<Navigate to={MainRoute}/>} />
         </Routes>
         <Footer />
       </BrowserRouter>
