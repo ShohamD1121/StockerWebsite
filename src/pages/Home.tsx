@@ -2,14 +2,12 @@ import React from "react";
 import Header from "../components/Header/Header";
 import Testimonials from "../components/Testimonials/Testimonials";
 import Features from "../components/Features/Features";
-import ScrollToTop from '../hooks/ScrollToTop';
+import ScrollToTop from "../hooks/ScrollToTop";
 
-type Props = {};
-
-const Home = (props: Props) => {
+const Home: React.FC = () => {
   return (
     <React.Fragment>
-      <ScrollToTop/>
+      <ScrollToTop />
       <Header />
       <Testimonials />
       <Features />

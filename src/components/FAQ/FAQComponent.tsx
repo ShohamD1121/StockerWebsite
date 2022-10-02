@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-const FAQComponent = (props: Props) => {
+const FAQComponent : React.FC = () => {
   return (
     <React.Fragment>
       <div className="flex h-screen justify-center items-center flex-1 w-full flex-col py-16 px-8">

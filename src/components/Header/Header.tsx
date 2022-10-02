@@ -5,9 +5,8 @@ import { mailFormat } from "../../constants/mailFormat";
 import { motion } from "framer-motion";
 import { item, container } from "../../constants/animations";
 
-type Props = {};
 
-const Header = (props: Props) => {
+const Header : React.FC = () => {
   const [email, setEmail] = useState<string>("");
   const [isEmailValid, setIsEmailValid] = useState<boolean>(true);
   const [isEmailSent, setIsEmailSent] = useState<boolean>(false);

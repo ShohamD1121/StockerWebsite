@@ -11,9 +11,7 @@ import {
   PrivacyPolicyRoute,
 } from "../../routes/routes";
 
-type Props = {};
-
-const Footer = (props: Props) => {
+const Footer: React.FC = () => {
   return (
     <React.Fragment>
       <div className="flex cool-gradient w-full pb-8  px-8">

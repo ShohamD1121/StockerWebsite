@@ -1,8 +1,6 @@
 import React from "react";
 
-type Props = {};
-
-const TermsOfServiceComponent = (props: Props) => {
+const TermsOfServiceComponent : React.FC= () => {
   return (
     <React.Fragment>
       <div className="flex flex-1 w-full items-center flex-col mt-5 py-16 px-8">

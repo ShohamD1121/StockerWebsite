@@ -2,9 +2,7 @@ import React from "react";
 import PrivacyPolicyComponent from "../components/Legal/PrivacyPolicyComponent";
 import ScrollToTop from "../hooks/ScrollToTop";
 
-type Props = {};
-
-const PrivacyPolicy = (props: Props) => {
+const PrivacyPolicy: React.FC = () => {
   return (
     <React.Fragment>
       <ScrollToTop />

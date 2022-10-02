@@ -6,10 +6,8 @@ import NavbarItems from "./NavbarItems";
 import { Link } from "react-router-dom";
 import { MainRoute } from "../../routes/routes";
 
-type Props = {};
-
-const Navbar = (props: Props) => {
-  const [navbarOpen, setNavbarOpen] = useState(false);
+const Navbar: React.FC = () => {
+  const [navbarOpen, setNavbarOpen] = useState<boolean>(false);
   return (
     <React.Fragment>
       <nav className="fixed w-full top-0 flex flex-wrap items-center justify-between px-2 py-1 bg-white mb-3 z-10">

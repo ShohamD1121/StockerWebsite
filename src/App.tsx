@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route , Navigate} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import FAQ from "./pages/FAQ";
 import Download from "./pages/Download";
@@ -18,7 +18,7 @@ import {
 } from "./routes/routes";
 import "./App.css";
 
-function App() {
+const App: React.FC = () => {
   return (
     <React.Fragment>
       <BrowserRouter>
@@ -30,12 +30,12 @@ function App() {
           <Route path={DownloadRoute} element={<Download />} />
           <Route path={TermsOfServiceRoute} element={<TermsOfService />} />
           <Route path={PrivacyPolicyRoute} element={<PrivacyPolicy />} />
-          <Route path="*" element={<Navigate to={MainRoute}/>} />
+          <Route path="*" element={<Navigate to={MainRoute} />} />
         </Routes>
         <Footer />
       </BrowserRouter>
     </React.Fragment>
   );
-}
+};
 
 export default App;

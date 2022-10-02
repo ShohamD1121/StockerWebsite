@@ -8,11 +8,11 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import React from "react";
 
-type Props = {
+interface Props {
   setNavbarOpen: any;
 };
 
-const NavbarItems = ({ setNavbarOpen }: Props) => {
+const NavbarItems : React.FC<Props> = ({ setNavbarOpen }) => {
   const navbarCloser = () => {
     setNavbarOpen(false);
   };

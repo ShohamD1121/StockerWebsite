@@ -1,10 +1,8 @@
 import React from "react";
 import FAQComponent from "../components/FAQ/FAQComponent";
-import ScrollToTop from '../hooks/ScrollToTop';
+import ScrollToTop from "../hooks/ScrollToTop";
 
-type Props = {};
-
-const FAQ = (props: Props) => {
+const FAQ: React.FC = () => {
   return (
     <React.Fragment>
       <ScrollToTop />

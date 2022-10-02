@@ -5,9 +5,8 @@ import Slides from "../../images/Slides.svg";
 import Financials from "../../images/Financials.svg";
 import NewsAndAnalysis from "../../images/NewsAndAnalysis.svg";
 
-type Props = {};
 
-const Features = (props: Props) => {
+const Features : React.FC = () => {
   return (
     <React.Fragment>
       <div id="features" className="flex justify-center items-center flex-col pt-10 pb-16 px-8">

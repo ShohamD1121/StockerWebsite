@@ -17,7 +17,7 @@ const Feature: React.FC<Props> = ({
   description,
   img,
   ltr,
-}: Props) => {
+}) => {
   return (
     <React.Fragment>
       <div className="flex flex-col justify-center items-center md:pt-0 pt-10 px-8">
@@ -29,7 +29,6 @@ const Feature: React.FC<Props> = ({
           {ltr && (
             <div className="flex md:w-6/12 w-full h-full items-center">
               <motion.img
-              
                 src={img}
                 alt="img"
                 className="w-[90%] h-[80%] sm:my-0 my-auto mx-auto"
@@ -59,7 +58,6 @@ const Feature: React.FC<Props> = ({
           {!ltr && (
             <div className="flex md:w-6/12 w-full h-full items-center">
               <motion.img
-                
                 src={img}
                 alt="img"
                 className="w-[90%] h-[80%] sm:my-0 my-auto mx-auto"

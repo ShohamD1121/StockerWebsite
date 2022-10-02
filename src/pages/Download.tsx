@@ -2,9 +2,8 @@ import React from "react";
 import DownloadComponent from "../components/Download/DownloadComponent";
 import ScrollToTop from '../hooks/ScrollToTop';
 
-type Props = {};
 
-const Download = (props: Props) => {
+const Download  : React.FC = () => {
   return (
     <React.Fragment>
       <ScrollToTop />

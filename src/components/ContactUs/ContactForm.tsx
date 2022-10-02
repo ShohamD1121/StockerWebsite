@@ -1,10 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 
-type Props = {};
-
-const ContactForm = (props: Props) => {
-  const form: any = useRef();
+const ContactForm: React.FC = () => {
+  const form: React.MutableRefObject<any> = useRef();
 
   const sendEmail = (e: any) => {
     e.preventDefault();
