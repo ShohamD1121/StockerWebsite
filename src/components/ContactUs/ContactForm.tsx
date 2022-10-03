@@ -4,7 +4,7 @@ import emailjs from "emailjs-com";
 const ContactForm: React.FC = () => {
   const form: React.MutableRefObject<any> = useRef();
 
-  const sendEmail = (e: any) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     emailjs
       .sendForm("gmail", "template_xwpiymb", form.current, "i4Ma9iw8nDyzcYwQ0")

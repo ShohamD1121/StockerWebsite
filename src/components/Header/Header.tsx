@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
+import { motion } from "framer-motion";
 import headerImg from "../../images/headerImg.svg";
 import database from "../../app/firebase";
 import { mailFormat } from "../../constants/mailFormat";
-import { motion } from "framer-motion";
 import { item, container } from "../../constants/animations";
 
 
@@ -10,7 +10,7 @@ const Header : React.FC = () => {
   const [email, setEmail] = useState<string>("");
   const [isEmailValid, setIsEmailValid] = useState<boolean>(true);
   const [isEmailSent, setIsEmailSent] = useState<boolean>(false);
-  const inputRef: any = useRef();
+  const inputRef: React.MutableRefObject<any> = useRef();
 
   const handleClick = () => {
     if (email.match(mailFormat)) {

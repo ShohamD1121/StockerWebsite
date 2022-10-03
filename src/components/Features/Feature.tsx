@@ -1,12 +1,13 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { IconType } from "react-icons/lib";
 
 type Props = {
-  Icon: any;
+  Icon: IconType;
   smallTitle: string;
   title: string;
   description: string;
-  img: any;
+  img: string;
   ltr: boolean;
 };
 

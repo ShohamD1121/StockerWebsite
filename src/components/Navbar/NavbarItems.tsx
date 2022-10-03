@@ -9,10 +9,10 @@ import { HashLink } from "react-router-hash-link";
 import React from "react";
 
 interface Props {
-  setNavbarOpen: any;
-};
+  setNavbarOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
-const NavbarItems : React.FC<Props> = ({ setNavbarOpen }) => {
+const NavbarItems: React.FC<Props> = ({ setNavbarOpen }) => {
   const navbarCloser = () => {
     setNavbarOpen(false);
   };
