@@ -1,1 +1,1 @@
-# Stocker App's Official Landing page
+# Stocker App's Official landing page
