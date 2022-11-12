@@ -1,6 +1,7 @@
 # Stocker App's Official landing page
 
 Mobile and desktop responsive landing page for stocker app.
+
 Stocker is a Smart stock picks mobile app that will be available on IOS and Android. Join our exclusive waiting list at http://stockermobileapp.com
 
 The project was developed with ReactJS Typescript Tailwind CSS and Firebase.
