@@ -12,6 +12,8 @@ import {
 } from "../../routes/routes";
 
 const Footer: React.FC = () => {
+  const baseURL =
+    process.env.NODE_ENV === "production" ? "https://stockermobileapp.com" : "";
   return (
     <React.Fragment>
       <div className="flex cool-gradient w-full pb-8  px-8">
@@ -60,18 +62,18 @@ const Footer: React.FC = () => {
             </div>
             <div className="flex flex-col">
               <h3 className="font-bold mb-4 cursor-pointer">Legal</h3>
-              <Link
-                to={PrivacyPolicyRoute}
+              <a
+                href={`${baseURL + PrivacyPolicyRoute}`}
                 className="cursor-pointer hover:text-blue"
               >
                 Privacy Policy
-              </Link>
-              <Link
-                to={TermsOfServiceRoute}
+              </a>
+              <a
+                href={`${baseURL + TermsOfServiceRoute}`}
                 className="cursor-pointer hover:text-blue"
               >
                 Terms of Service
-              </Link>
+              </a>
             </div>
             <div className="flex flex-col">
               <h3 className="font-bold mb-4 cursor-pointer">Social Media</h3>

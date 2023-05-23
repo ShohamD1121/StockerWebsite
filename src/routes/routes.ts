@@ -1,6 +1,6 @@
 export const MainRoute = "/";
-export const FaqRoute = "/Faq";
-export const ContactUsRoute = "/Contact-Us";
-export const DownloadRoute = "/Download";
-export const TermsOfServiceRoute = "/Terms-Of-Service";
-export const PrivacyPolicyRoute = "/Privacy-Policy";
+export const FaqRoute = "/faq";
+export const ContactUsRoute = "/contact-us";
+export const DownloadRoute = "/download";
+export const TermsOfServiceRoute = "/terms-of-service";
+export const PrivacyPolicyRoute = "/privacy-policy";
