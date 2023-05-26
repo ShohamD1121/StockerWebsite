@@ -1,35 +1,11 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import headerImg from "../../images/headerImg.svg";
-import database from "../../app/firebase";
-import { mailFormat } from "../../constants/mailFormat";
+import GooglePlay from "../../images/GooglePlay.svg";
+import AppStore from "../../images/AppStore.svg";
 import { item, container } from "../../constants/animations";
 
-
-const Header : React.FC = () => {
-  const [email, setEmail] = useState<string>("");
-  const [isEmailValid, setIsEmailValid] = useState<boolean>(true);
-  const [isEmailSent, setIsEmailSent] = useState<boolean>(false);
-  const inputRef: React.MutableRefObject<any> = useRef();
-
-  const handleClick = () => {
-    if (email.match(mailFormat)) {
-      database
-        .ref("users")
-        .push({
-          gmail: email,
-        })
-        .catch((err) => console.log(err));
-      setIsEmailValid(true);
-      setIsEmailSent(true);
-    } else {
-      setIsEmailValid(false);
-      setIsEmailSent(false);
-    }
-    setEmail("");
-    inputRef.current.value = "";
-  };
-
+const Header: React.FC = () => {
   return (
     <React.Fragment>
       <div className="flex cool-gradient md:h-screen justify-center items-center flex-1 w-full flex-col py-16 px-8">
@@ -58,11 +34,77 @@ const Header : React.FC = () => {
             <div className="container flex flex-col md:mt-0 mt-2 gap-2">
               <motion.h5
                 variants={item}
-                className="text-center text-gray-500 font-semibold md:mb-6 mb-2 sm:text-md text-sm 2xl:text-xl"
+                className="text-center text-gray-600 font-semibold mt-6 md:mt-0 md:mb-2 text-xl md:text-2xl 2xl:text-3xl"
               >
-                Join The 100+ Stockers on our Waitlist
+                Get the App
               </motion.h5>
-              <div className="container  flex justify-center mb-4">
+              <div className="container flex flex-row items-center justify-around md:justify-center md:gap-4">
+                <a href="https://apps.apple.com/app/stock-market-investing-picks/id6443543680">
+                  <motion.img
+                    variants={item}
+                    src={AppStore}
+                    alt="App Store"
+                    className="w-40 h-auto md:mb-0"
+                  />
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.app.stocker">
+                  <motion.img
+                    variants={item}
+                    src={GooglePlay}
+                    alt="Google Play"
+                    className="w-40 h-auto"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <motion.div
+            variants={container}
+            className="container md:w-6/12 w-full h-full md:justify-end justify-center flex"
+          >
+            <motion.img
+              variants={item}
+              src={headerImg}
+              alt="header-img"
+              className="w-[90%] sm:h-[100%] h-[90%] "
+            />
+          </motion.div>
+        </motion.div>
+      </div>
+    </React.Fragment>
+  );
+};
+
+export default Header;
+
+/*
+
+  Old Code : This was relevant before the App was out
+  
+  // const [email, setEmail] = useState<string>("");
+  // const [isEmailValid, setIsEmailValid] = useState<boolean>(true);
+  // const [isEmailSent, setIsEmailSent] = useState<boolean>(false);
+  // const inputRef: React.MutableRefObject<any> = useRef();
+
+  // const handleClick = () => {
+  //   if (email.match(mailFormat)) {
+  //     database
+  //       .ref("users")
+  //       .push({
+  //         gmail: email,
+  //       })
+  //       .catch((err) => console.log(err));
+  //     setIsEmailValid(true);
+  //     setIsEmailSent(true);
+  //   } else {
+  //     setIsEmailValid(false);
+  //     setIsEmailSent(false);
+  //   }
+  //   setEmail("");
+  //   inputRef.current.value = "";
+  // };
+  
+  <div className="container  flex justify-center mb-4">
                 <motion.input
                   variants={item}
                   className="sm:text-md text-xs border rounded-l-lg w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -93,24 +135,4 @@ const Header : React.FC = () => {
                 >
                   Email has been sent successfully
                 </motion.p>
-              )}
-            </div>
-          </div>
-          <motion.div
-            variants={container}
-            className="container md:w-6/12 w-full h-full md:justify-end justify-center flex"
-          >
-            <motion.img
-              variants={item}
-              src={headerImg}
-              alt="header-img"
-              className="w-[90%] sm:h-[100%] h-[90%] "
-            />
-          </motion.div>
-        </motion.div>
-      </div>
-    </React.Fragment>
-  );
-};
-
-export default Header;
+              )} */

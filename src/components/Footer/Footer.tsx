@@ -78,13 +78,13 @@ const Footer: React.FC = () => {
             <div className="flex flex-col">
               <h3 className="font-bold mb-4 cursor-pointer">Social Media</h3>
               <a
-                href="https://www.facebook.com/yoav.tzori"
+                href="https://www.facebook.com/profile.php?id=100083667444733"
                 className="cursor-pointer hover:text-blue"
               >
                 Facebook
               </a>
               <a
-                href="https://www.instagram.com/yoav_tzori"
+                href="https://www.instagram.com/stocker_investing/"
                 className="cursor-pointer hover:text-blue"
               >
                 Instagram
@@ -108,14 +108,14 @@ const Footer: React.FC = () => {
             </Link>
             <h2 className="text-gray-500">Made By @ShohamDouek</h2>
             <div className="flex items-center gap-5">
-              <a href="https://www.facebook.com/yoav.tzori">
+              <a href="https://www.facebook.com/profile.php?id=100083667444733">
                 {" "}
                 <FaFacebookSquare
                   size={25}
                   className="text-green hover:text-blue"
                 />
               </a>
-              <a href="https://www.instagram.com/yoav_tzori">
+              <a href="https://www.instagram.com/stocker_investing/">
                 {" "}
                 <FaInstagram size={25} className="text-blue hover:text-green" />
               </a>
