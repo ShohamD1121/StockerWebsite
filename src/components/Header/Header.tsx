@@ -25,19 +25,13 @@ const Header: React.FC = () => {
               </motion.h1>
               <motion.p
                 variants={item}
-                className="md:text-lg text-sm text-gray-500 2xl:text-2xl"
+                className="md:text-xl text-lg text-gray-500 2xl:text-2xl"
               >
                 Discover and research the best stock investing opportunities for
                 you.
               </motion.p>
             </div>
             <div className="container flex flex-col md:mt-0 mt-2 gap-2">
-              <motion.h5
-                variants={item}
-                className="text-center text-gray-600 font-semibold mt-6 md:mt-0 md:mb-2 text-xl md:text-2xl 2xl:text-3xl"
-              >
-                Get the App
-              </motion.h5>
               <div className="container flex flex-row items-center justify-around md:justify-center md:gap-4">
                 <a href="https://apps.apple.com/app/stock-market-investing-picks/id6443543680">
                   <motion.img

@@ -5,11 +5,13 @@ import Slides from "../../images/Slides.svg";
 import Financials from "../../images/Financials.svg";
 import NewsAndAnalysis from "../../images/NewsAndAnalysis.svg";
 
-
-const Features : React.FC = () => {
+const Features: React.FC = () => {
   return (
     <React.Fragment>
-      <div id="features" className="flex justify-center items-center flex-col pt-10 pb-16 px-8">
+      <div
+        id="features"
+        className="flex justify-center items-center flex-col pt-10 pb-16 px-8"
+      >
         <div id="stock-picking">
           <Feature
             Icon={FaSearch}
